@@ -1,5 +1,5 @@
 # We're using the Elixir 1.5.2 base image and extending it
-FROM elixir:alpine
+FROM elixir:latest
 
 # Create a directory for your application code and set it as the WORKDIR. All following commands will be run in this directory.
 RUN mkdir /app
