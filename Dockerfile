@@ -9,7 +9,7 @@ WORKDIR /app
 RUN mix local.rebar --force && mix local.hex --force 
 
 # Install the Phoenix Mix archive
-RUN mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+# RUN mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez
 
 # COPY mix.exs and mix.lock and install dependencies before adding the full code so the cache only
 # gets invalidated when dependencies are changed
